@@ -3,6 +3,10 @@ body{
     background-color: azure;
 }
 
-#sheCodes {
+.sheCodes {
     color: #865CF0;
+}
+
+footer {
+    font-size: 12px;
 }
