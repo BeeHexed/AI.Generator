@@ -1,13 +1,79 @@
 body{
-    color: darkblue;
+    color: #496365;
     background-color: azure;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.container {
+    margin: 120px auto;
+    max-width: 600px;
+    
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 37px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+
+form {
+    padding: 30px;
+    background-color: #fff3e2;
+    display: flex;
+    box-shadow: 0px 5px 30px rgba(71, 98, 100, .5);
+    margin-bottom: 40px;
+    border-radius: 20px;
+
+}
+a{
+    color: #919bb2;
+    text-decoration: none;
+}
+
+.input {
+    padding: 16px;
+    border-radius: 50px;
+    border: 1px solid #dabbab;
+    width: 80%;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.submit-button {
+    margin-left: 10px;
+    background-color: #94b0b2;
+    border-radius: 50px 13px 50px 13px;
+    border: none;
+    width: 130px;
+    color: #FAFDFE;
+    font-size: 15px;
+    
+}
+
+.prose {
+    background-color: rgba(255, 243, 226, .50);
+    border: 1px dotted #496365;
+    padding: 35px;
+    font-size: 17px;
+    line-height: 1.5;
+    border-left: 2px solid #496365;
+    box-shadow: 0px 5px 30px rgba(71, 98, 100, .2);
+    border-radius: 3px;
+    
+}
+footer {
+    font-size: 12px;
+    padding-top: 25px;
+    text-align: center;
+    margin-top: 20px;
 }
 
 .sheCodes {
     color: #865CF0;
-}
-
-footer {
-    font-size: 12px;
-    padding-top: 20px;
 }
