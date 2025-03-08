@@ -7,50 +7,61 @@
     <title>Time Traveller Journal Generator</title>
   </head>
   <body>
-    <header>
-      <h1>Welcome Time Traveller</h1>
-    </header>
+    <div class="container">
+      <header>
+        <h1>Welcome, Time Traveller</h1>
+      </header>
 
-    <form action="#">
-      <input
-        type="text"
-        placeholder="Pick an era"
-        id="name"
-        autofocus
-        required
-        autocomplete="off"
-      />
-      <input type="submit" />
-    </form>
-    <div>Journal Entry</div>
-    <div>
-      Today, I stepped back into the year 1888, a world of horse-drawn
-      carriages, gaslight lamps,
-      <br />
-      and the unsettling premonition of Jack the Ripper lurking in the
-      fog-shrouded streets of Whitechapel
-    </div>
-
-    <footer>
-      This AI project was coded by Ashley Collins (<a
-        href="https://beehexed.github.io/"
-        target="_blank"
-        >BeeHexed</a
-      >
-      🐝). It is open-sourced on
-      <a href="https://github.com/BeeHexed/AI.Generator" target="_blank"
-        >Github</a
-      >
-      and hosted on
-      <a href="https://ai-generator1.netlify.app/" target="_blank">Netlify</a>.
-      <br />
-      <div class="sheCodes">
-        Special thanks to
-        <a href="https://www.shecodes.io/" target="_blank">SheCodes</a> for
-        teaching me how to code.
+      <form action="#">
+        <input
+          type="text"
+          placeholder="Pick an era"
+          class="input"
+          id="name"
+          autofocus
+          required
+          autocomplete="off"
+        />
+        <input type="submit" class="submit-button" />
+      </form>
+      <div>
+        <strong> Stuck for an era? </strong><br />Try entering the
+        <em>Victorian</em> or <em> Mesolithic</em> eras,<em> Ancient Rome, </em>
+        or a historically significant event like <em>Jack the Ripper</em> or the
+        sinking of <em>the Titanic</em>.
       </div>
-    </footer>
+      <br />
+      <div class="prose">
+        <div>
+          Today, I stepped back into the year 1888, a world of horse-drawn
+          carriages, gaslight lamps,
+          <br />
+          and the unsettling premonition of Jack the Ripper lurking in the
+          fog-shrouded streets of Whitechapel.
+        </div>
+      </div>
 
+      <footer>
+        This AI project was coded by Ashley Collins (<a
+          href="https://beehexed.github.io/"
+          target="_blank"
+          >BeeHexed</a
+        >
+        🐝). It is open-sourced on
+        <a href="https://github.com/BeeHexed/AI.Generator" target="_blank"
+          >Github</a
+        >
+        and hosted on
+        <a href="https://ai-generator1.netlify.app/" target="_blank">Netlify</a
+        >.
+        <br />
+        <div class="sheCodes">
+          Special thanks to
+          <a href="https://www.shecodes.io/" target="_blank">SheCodes</a> for
+          teaching me how to code.
+        </div>
+      </footer>
+    </div>
     <script src="src/script.js"></script>
   </body>
 </html>
