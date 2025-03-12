@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>Time Traveller Journal Generator</title>
   </head>
@@ -12,17 +13,20 @@
         <h1>Welcome, Time Traveller</h1>
       </header>
 
-      <form action="#">
+      <form action="#" id="input-generator">
         <input
           type="text"
           placeholder="Pick an era"
           class="input"
-          id="name"
           autofocus
           required
           autocomplete="off"
         />
-        <input type="submit" class="submit-button" />
+        <input
+          type="submit"
+          class="submit-button"
+          id="input-generator-button"
+        />
       </form>
       <div>
         <strong> Stuck for an era? </strong><br />Try entering the
@@ -31,14 +35,8 @@
         sinking of <em>the Titanic</em>.
       </div>
       <br />
-      <div class="prose">
-        <div>
-          Today, I stepped back into the year 1888, a world of horse-drawn
-          carriages, gaslight lamps,
-          <br />
-          and the unsettling premonition of Jack the Ripper lurking in the
-          fog-shrouded streets of Whitechapel.
-        </div>
+      <div class="prose" id="story">
+        <div></div>
       </div>
 
       <footer>
