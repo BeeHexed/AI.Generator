@@ -71,7 +71,11 @@ a{
     border-left: 2px solid #496365;
     box-shadow: 0px 5px 30px rgba(71, 98, 100, .2);
     border-radius: 3px;
-    
+}
+
+.prose strong {
+    color: #94b0b2;
+
 }
 footer {
     font-size: 12px;
