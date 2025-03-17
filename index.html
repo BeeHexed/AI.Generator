@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+
     <link rel="stylesheet" href="src/style.css" />
+
     <title>Time Traveller Journal Generator</title>
   </head>
   <body>
@@ -21,6 +24,7 @@
           autofocus
           required
           autocomplete="off"
+          id="userInstructions"
         />
         <input
           type="submit"
@@ -30,9 +34,12 @@
       </form>
       <div>
         <strong> Stuck for an era? </strong><br />Try entering the
-        <em>Victorian</em> or <em> Mesolithic</em> eras,<em> Ancient Rome, </em>
+        <em>Victorian England</em> or <em> Mesolithic France</em>,<em>
+          Ancient Rome,
+        </em>
         or a historically significant event like <em>Jack the Ripper</em> or the
-        sinking of <em>the Titanic</em>.
+        sinking of <em>the Titanic</em>. You can also enter a country and year.
+        For example: <em>China 876 CE</em>.
       </div>
       <br />
       <div class="prose" id="story">

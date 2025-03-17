@@ -56,6 +56,12 @@ a{
     
 }
 
+.submit-button:hover {
+    background-color: #496365;
+
+
+}
+
 .prose {
     background-color: rgba(255, 243, 226, .50);
     border: 1px dotted #496365;
