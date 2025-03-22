@@ -7,7 +7,6 @@ body{
 .container {
     margin: 120px auto;
     max-width: 600px;
-    
 }
 
 header {
@@ -21,16 +20,15 @@ h1 {
     text-align: center;
 }
 
-
 form {
     padding: 30px;
     background-color: #fff3e2;
     display: flex;
     box-shadow: 0px 5px 30px rgba(71, 98, 100, .5);
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     border-radius: 20px;
-
 }
+
 a{
     color: #919bb2;
     text-decoration: none;
@@ -41,7 +39,7 @@ a{
     border-radius: 50px;
     border: 1px solid #dabbab;
     width: 80%;
-    font-size: 15px;
+    font-size: 14.5px;
     line-height: 20px;
 }
 
@@ -53,13 +51,20 @@ a{
     width: 130px;
     color: #FAFDFE;
     font-size: 15px;
-    
 }
 
 .submit-button:hover {
     background-color: #496365;
+}
 
+.information {
+    font-size: 15px;
+    line-height: 1.5;
+    opacity: 70%; 
+}
 
+.hint {
+text-indent: 7%;
 }
 
 .prose {
@@ -75,8 +80,13 @@ a{
 
 .prose strong {
     color: #94b0b2;
+}
+
+.hidden {
+    display: none;
 
 }
+
 footer {
     font-size: 12px;
     padding-top: 25px;

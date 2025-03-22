@@ -18,9 +18,9 @@
 
       <form action="#" id="input-generator">
         <input
-          type="text"
-          placeholder="Pick an era"
           class="input"
+          type="text"
+          placeholder="Please, enter the historical event you'd like to generate."
           autofocus
           required
           autocomplete="off"
@@ -32,17 +32,23 @@
           id="input-generator-button"
         />
       </form>
-      <div>
-        <strong> Stuck for an era? </strong><br />Try entering the
-        <em>Victorian England</em> or <em> Mesolithic France</em>,<em>
-          Ancient Rome,
-        </em>
-        or a historically significant event like <em>Jack the Ripper</em> or the
-        sinking of <em>the Titanic</em>. You can also enter a country and year.
-        For example: <em>China 876 CE</em> or <em>London 3000 CE</em>.
+      <div class="information">
+        <strong> Stuck for an event? </strong>
+
+        <br />
+        <div class="hint">
+          This generator can use eras, events, and moments in history. Try
+          entering <em>Victorian England</em>, <em> Mesolithic France</em>,<em>
+            Ancient Rome,
+          </em>
+          or a historically significant event like
+          <em>the Destruction of the Library at Alexandria</em> or the sinking
+          of <em>the Titanic</em>. You can also enter a country and year. For
+          example: <em>China 876 AD</em> or <em>West Africa 300 BC</em>.
+        </div>
       </div>
       <br />
-      <div class="prose" id="story">
+      <div class="prose hidden" id="story">
         <div></div>
       </div>
 

@@ -21,8 +21,12 @@ function generatePoem(event) {
     let instructionsInput = document.querySelector('#userInstructions');
     let apiKey = "36b4fe238810fo977tebf4ca2bcf46b6";
     let prompt = `Generate a time traveling story in prose form, based on the prompt: ${instructionsInput.value}`;
-    let context = `User instructions: You are an expert on history and time travel and love to write short journal entries as a traveller to different times. Your mission is to write an educational journal entry of no more than 150 words. Seperate each paragraph with a <br/>. Be factually correct when possible. Do not include the words 'Journal Entry:' in the title. Use past, present, or future voice as applicable to the prompt ${instructionsInput.value}. Add a <br/> at the end of the last paragraph and Sign the work 'SheCodes AI' on a new line and in a <strong></strong> element. Make sure to follow the user instructions. Thank you.`;
+    let context = `User instructions: You are an expert on history and time travel and love to write short journal entries as a traveller to different times. Your mission is to write an educational journal entry of no more than 200 words. Be factually correct when possible. Do not include a title. Use past, present, or future voice as applicable to the prompt ${instructionsInput.value}. Add a <br/> at the end of the last paragraph and Sign the work 'SheCodes AI' on a new line and in a <p><strong></strong></p> element. Make sure to follow the user instructions. Thank you.`;
     let apiUrl =`https://api.shecodes.io/ai/v1/generate?prompt=${encodeURIComponent(prompt)}&context=${encodeURIComponent(context)}&key=${apiKey}`;
+
+    let storyElement = document.querySelector("#story");
+    storyElement.classList.remove("hidden");
+    storyElement.innerHTML = `⏳Generating your story about ${instructionsInput.value}.<br/>Thank you for waiting. 🙂`
 
     console.log("Generating story.");
     console.log(`Prompt: ${prompt}`);
