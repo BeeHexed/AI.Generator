@@ -26,7 +26,7 @@ function generatePoem(event) {
 
     let storyElement = document.querySelector("#story");
     storyElement.classList.remove("hidden");
-    storyElement.innerHTML = `⏳Generating your story about ${instructionsInput.value}.<br/>Thank you for waiting. 🙂`
+    storyElement.innerHTML = `<div class= "blink">⏳</div> Generating your story about ${instructionsInput.value}.<br/>Thank you for waiting. 🙂`
 
     console.log("Generating story.");
     console.log(`Prompt: ${prompt}`);
