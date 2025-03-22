@@ -1,6 +1,5 @@
 function displayStory(response) {
-  console.log("Story generated");
-   console.log("Received API Response:", response);
+
   
     if (!response.data || !response.data.answer) {
     console.error("Error: No story found in response.");
@@ -27,10 +26,6 @@ function generatePoem(event) {
     let storyElement = document.querySelector("#story");
     storyElement.classList.remove("hidden");
     storyElement.innerHTML = `<div class= "blink">⏳</div> Generating your story about ${instructionsInput.value}.<br/>Thank you for waiting. 🙂`
-
-    console.log("Generating story.");
-    console.log(`Prompt: ${prompt}`);
-    console.log(`Context: ${context}`);
 
     axios.get(apiUrl).then(displayStory);
 }
